@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchDevices } from "@/services/mockApi";
+import { fetchDevices } from "@/services/api";
 import StatCard from "@/components/StatCard";
 import { Activity, Server, Wifi, WifiOff, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";

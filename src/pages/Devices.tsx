@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchDevices } from "@/services/mockApi";
+import { fetchDevices } from "@/services/api";
 import DeviceCard from "@/components/DeviceCard";
 import { Search, Filter } from "lucide-react";
 import { Input } from "@/components/ui/input";
