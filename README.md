@@ -1,73 +1,35 @@
-# Welcome to your Lovable project
+# 🌐 NRE Device Dashboard – Full Stack Application
 
-## Project info
+This repository contains a *full-stack web application* built with:
+- *Frontend:* React (Vite)
+- *Backend:* Django (Python)
+- *Purpose:* Display and manage mock network devices (Router, Switch, Firewall) and their Up/Down status.
 
-**URL**: https://lovable.dev/projects/540f96fb-0476-4dd6-b360-a4f899241852
+---
 
-## How can I edit this code?
+## 🧭 Project Overview
 
-There are several ways of editing your application.
+| Layer | Stack             | Description                                     |
+|--------|-------------------|-------------------------------------------------|
+| Frontend | React (Vite)      | UI to view device list and filter by status     |
+| Backend | Django            | REST API serving device data                    |
+| Communication | HTTP (proxy /api) | Frontend calls /api/devices → proxied to Django |
+| Styling | Bootstrap 5       | Clean, responsive dashboard UI                  |
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/540f96fb-0476-4dd6-b360-a4f899241852) and start prompting.
+## ✅ Quick Combined Setup Summary
+git clone https://github.com/singhaakash17/NRE_device_dashboard-main.git
+cd NRE_device_dashboard
 
-Changes made via Lovable will be committed automatically to this repo.
+| Step | Command                                                              | Description                                                    |
+| ---- | -------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1    | `cd backend && python -m venv venv`                                  | Create a virtual environment for Django backend                |
+| 2    | `source venv/bin/activate` <br> *(Windows: `venv\Scripts\activate`)* | Activate the virtual environment                               |
+| 3    | `pip install -r requirements.txt`                                    | Install backend dependencies                                   |
+| 4    | `python manage.py runserver 127.0.0.1:8000`                          | Run Django backend                                             |
+| 5    | `cd ../frontend/device-steward && npm install`                       | Install frontend dependencies                                  |
+| 6    | `npm run dev`                                                        | Start React frontend (Vite dev server)                         |
+| 7    | Visit [http://localhost:5173](http://localhost:5173)                 | Access the full-stack app — React frontend + Django backend 🎉 |
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/540f96fb-0476-4dd6-b360-a4f899241852) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
